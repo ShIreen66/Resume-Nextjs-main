@@ -16,18 +16,24 @@ const ClassCade: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 min-h-screen">
+    <div className="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 min-h-screen" >
       {/* Hero Section */}
-      <section className="text-center py-16 px-6 bg-gradient-to-b from-green-50 to-white dark:from-gray-900 dark:to-gray-950">
+      <section className="case-study-banner">
         <motion.div
           initial="hidden"
           animate="visible"
         //   variants={fadeUp}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl font-bold mb-4">
-            ClassCade – Gamified Classroom Experience
-          </h1>
+          <h1 className="text-blue-700 text-sm font-semibold uppercase tracking-wide">
+                      ClassCade UX Case Study
+                    </h1>
+                    <motion.h2
+                      // variants={fadeUp}
+                      className="text-4xl md:text-5xl font-bold mt-2"
+                    >
+                      ClassCade – Gamified Classroom Experience
+                    </motion.h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
             ClassCade is a game-based rewards platform that turns classroom
             achievements into fun. Students earn tokens from teachers and use
@@ -54,7 +60,10 @@ const ClassCade: React.FC = () => {
           </div>
         </div>
 
-        {/* Problem Space */}
+
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="contnt-study">
+             {/* Problem Space */}
         <div>
           <h3 className="text-2xl font-semibold mb-2">Problem Space</h3>
           <p className="text-gray-600 dark:text-gray-400">
@@ -117,6 +126,13 @@ const ClassCade: React.FC = () => {
             <li>Feedback refined card layouts and token display clarity.</li>
           </ul>
         </div>
+          </div>
+          <div className="links-study">
+            <button>
+              
+            </button>
+          </div>
+        </div>
 
         {/* Outcome */}
         <div>
@@ -126,29 +142,6 @@ const ClassCade: React.FC = () => {
             assignments by 40%. Teachers rated the platform 4.8/5 for ease of
             use and engagement improvement.
           </p>
-        </div>
-
-        {/* Mockups */}
-        <div>
-          <h3 className="text-2xl font-semibold mb-4">Sneak Peek Shots</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {["dashboard", "dashboard1", "dashboard2", "dashboard3"].map(
-              (img, index) => (
-                <div
-                  key={index}
-                  className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
-                >
-                  <Image
-                    src={`/images/${img}.jpg`}
-                    alt={`ClassCade UI ${index + 1}`}
-                    width={400}
-                    height={250}
-                    className="object-cover w-full h-48"
-                  />
-                </div>
-              )
-            )}
-          </div>
         </div>
       </section>
 

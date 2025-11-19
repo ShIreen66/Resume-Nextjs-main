@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const moreImages = [
-  "/images/gallery/gallery-img-9.png",
-  "/images/gallery/gallery-img-10.png",
-  "/images/gallery/gallery-img-11.png",
-  "/images/gallery/gallery-img-12.png",
+  // "/images/gallery/gallery-img-9.png",
+  // "/images/gallery/gallery-img-10.png",
+  // "/images/gallery/gallery-img-11.png",
+  // "/images/gallery/gallery-img-12.png",
   "/images/gallery/gallery-img-13.png",
   "/images/gallery/gallery-img-14.png",
   "/images/gallery/gallery-img-15.png",
@@ -16,15 +16,15 @@ const moreImages = [
   "/images/gallery/gallery-img-17.png",
   "/images/gallery/gallery-img-18.png",
   "/images/gallery/gallery-img-19.png",
-  "/images/gallery/gallery-img-20.png",
+  // "/images/gallery/gallery-img-20.png",
   "/images/gallery/gallery-img-21.png",
   "/images/gallery/gallery-img-22.png",
-  "/images/gallery/gallery-img-23.png",
-  "/images/gallery/gallery-img-24.png",
-  "/images/gallery/gallery-img-25.png",
-  "/images/gallery/gallery-img-26.png",
-  "/images/gallery/gallery-img-27.png",
-  "/images/gallery/gallery-img-28.png",
+  // "/images/gallery/gallery-img-23.png",
+  // "/images/gallery/gallery-img-24.png",
+  // "/images/gallery/gallery-img-25.png",
+  // "/images/gallery/gallery-img-26.png",
+  // "/images/gallery/gallery-img-27.png",
+  // "/images/gallery/gallery-img-28.png",
   "/images/gallery/gallery-img-29.png",
   "/images/gallery/gallery-img-61.png",
 ];
@@ -35,19 +35,8 @@ export default function MoreGalleryPage() {
       id="gallery"
       className="min-h-screen bg-gradient-to-b from-white container to-gray-50 dark:from-gray-950 dark:to-gray-900 pt-32 pb-20 px-6 md:px-12"
     >
-      <div className="max-w-7xl mx-auto text-center mb-16">
-        <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
-          <h2>Design Gallery</h2>
-          <p className="text-xl text-orange-500">( 05 )</p>
-        </div>
-        <p className="text-gray-600 dark:text-gray-400 mt-4 text-lg">
-          Extended collection of creative projects and UI explorations beyond
-          the main gallery.
-        </p>
-      </div>
-
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="custom-gallery"
         style={{ gap: "24px" }}
       >
         {moreImages.map((src, index) => (
@@ -59,7 +48,7 @@ export default function MoreGalleryPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="relative overflow-hidden rounded-3xl shadow-lg group cursor-pointer bg-gray-100 dark:bg-gray-800"
+            className="relative overflow-hidden shadow-lg group cursor-pointer bg-gray-100 dark:bg-gray-800"
           >
             <Image
               src={src}

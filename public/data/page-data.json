@@ -3,15 +3,15 @@
     "contactItems": [
       {
         "type": "email",
-        "label": "hello@imsruthi.com",
+        "label": "dk88628@gmail.com",
         "icon": "/images/icon/mail-icon.svg",
-        "link": "mailto:hello@imsruthi.com"
+        "link": "mailto:dk88628@gmail.com"
       },
       {
         "type": "phone",
-        "label": "+901 5588 2500",
+        "label": "+91 9340333890",
         "icon": "/images/icon/call-icon.svg",
-        "link": "tel:+90155882500"
+        "link": "tel:+91 9340333890"
       },
       {
         "type": "website",
@@ -22,9 +22,9 @@
     ],
     "socialItems": [
       {
-        "platform": "dribbble",
+        "platform": "instagram",
         "icon": "/images/icon/dribble-icon.svg",
-        "link": "https://dribbble.com"
+        "link": "https://instagram.com"
       }
       ,
       {

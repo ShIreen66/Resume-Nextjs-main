@@ -5,12 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const moreImages = [
- "/images/gallery/gallery-img-1.png",
-  "/images/gallery/gallery-img-2.png",
-  "/images/gallery/gallery-img-3.png",
-  "/images/gallery/gallery-img-5.png",
+//  "/images/gallery/gallery-img-1.png",
+  // "/images/gallery/gallery-img-2.png",
+  // "/images/gallery/gallery-img-3.png",
+  // "/images/gallery/gallery-img-5.png",
   "/images/gallery/gallery-img-7.png",
   "/images/gallery/gallery-img-8.png",
+  "/images/gallery/gallery-img-9.png",
+  "/images/gallery/gallery-img-10.png",
+  "/images/gallery/gallery-img-11.png",
+  "/images/gallery/gallery-img-12.png",
 ];
 
 export default function MoreGalleryPage() {

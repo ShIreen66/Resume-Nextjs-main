@@ -147,3 +147,51 @@ button.btn-primary:hover::before {
     page-break-before: always;
   }
 }
+
+.custom-gallery {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.custom-gallery>div {
+  border-radius: 10px;
+}
+
+.custom-gallery img {
+  height: 300px;
+  width: 100%;
+}
+
+section.case-study-banner {
+  margin-top: 57px;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.case-study-banner .tracking-wide {
+  color: #ff990a;
+}
+
+.case-study-banner p {
+  color: #aeaeae;
+}
+
+.case-study-banner>div {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.contnt-study {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

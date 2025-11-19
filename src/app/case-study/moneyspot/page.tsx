@@ -16,7 +16,7 @@ const Moneyspot: React.FC = () => {
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen">
       {/* Hero Section */}
-      <section className="bg-white py-16 px-6 md:px-12 text-center shadow-sm">
+      <section className="case-study-banner">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -80,24 +80,6 @@ const Moneyspot: React.FC = () => {
             <li><strong>Trust:</strong> Secure and responsible experience.</li>
             <li><strong>Accessibility:</strong> Easy to use for all users.</li>
           </ul>
-        </section>
-
-        {/* Sneak Peek */}
-        <section>
-          <h3 className="text-2xl font-semibold mb-6">Sneak Peek Shots</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {['application.jpg', 'application1.jpg', 'application2.jpg'].map(
-              (img, i) => (
-                <div key={i} className="bg-gray-100 rounded-lg overflow-hidden shadow-sm">
-                  <img
-                    src={`/images/${img}`}
-                    alt="Application"
-                    className="w-full h-56 object-cover"
-                  />
-                </div>
-              )
-            )}
-          </div>
         </section>
       </main>
 

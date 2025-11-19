@@ -16,7 +16,7 @@ const Alsco: React.FC = () => {
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen">
       {/* Hero Section */}
-      <section className="bg-white shadow-sm py-16 px-6 md:px-12 text-center">
+      <section className="case-study-banner">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -94,22 +94,22 @@ const Alsco: React.FC = () => {
           </ul>
         </section>
 
-        {/* Sneak Peek */}
-        <section>
-          <h3 className="text-2xl font-semibold mb-6">Sneak Peek Shots</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {['uniform.jpg', 'uniform1.jpg', 'uniform2.jpg', 'uniform3.jpg'].map(
-              (img, i) => (
-                <div key={i} className="bg-gray-100 rounded-lg overflow-hidden shadow-sm">
-                  <img
-                    src={`/images/${img}`}
-                    alt="Uniform"
-                    className="w-full h-56 object-cover"
-                  />
-                </div>
-              )
-            )}
-          </div>
+                <section>
+          <h3 className="text-2xl font-semibold mb-3">Key Features</h3>
+          <ul className="list-disc pl-6 text-gray-600 space-y-2">
+            <li>
+              <strong>Service Catalogue:</strong> OUniforms, linens, floor care, washroom supplies, and first aid programs organized for easy discovery.
+            </li>
+            <li>
+              <strong>Service Details:</strong> Clear descriptions, features, and customer benefits for each offering.
+            </li>
+            <li>
+              <strong>Scalable Design:</strong> Businesses can manage subscriptions, requests, and orders digitally.
+            </li>
+            <li>
+              <strong>Professional Look:</strong> Clean and trustworthy visuals.
+            </li>
+          </ul>
         </section>
       </main>
     </div>
